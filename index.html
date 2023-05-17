@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Classification</h1>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <button type="submit">Classify</button>
+        </form>
+    </div>
+</body>
+</html>
